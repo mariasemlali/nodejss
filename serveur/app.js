@@ -12,7 +12,7 @@ app.get('/items', (req, res) => {
  res.json(items);
 });
 // GET item by ID
-app.get('/items/:id', (req, res) => {
+app.get('/items', (req, res) => {
  const item = items.find(i => i.id == req.params.id);
  if (item) {
  res.json(item);
